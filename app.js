@@ -4,7 +4,7 @@ require('dotenv/config')
 app.use(require('body-parser').json()) // Parses json, multi-part (file), url-encoded
 help = require('./config/help')
 res = new help.Helpfix()
-knex = require('knex')({client: 'mysql', connection: { host:'103.55.39.194', user: 'teestmasu_user', port: 3306, password: 's4ntr1nuh42009', database: 'teestmasu_user'}})
+knex = require('knex')({client: 'mysql', connection: { host:'103.149.46.78', user: 'erpfixc1', port: 3306, password: 'QPd]+44u96jFWq', database: 'erpfixc1_root'}})
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
