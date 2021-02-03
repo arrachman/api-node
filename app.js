@@ -1,7 +1,7 @@
 var app = require('express')()
 fs = require('fs');
 require('dotenv/config')
-app.use(require('body-parser').json()) // Parses json, multi-part (file), url-encoded test
+app.use(require('body-parser').json()) // Parses json, multi-part (file), url-encoded test test
 help = require('./config/help')
 res = new help.Helpfix()
 knex = require('knex')({client: 'mysql', connection: { host:'103.149.46.78', user: 'erpfixc1', port: 3306, password: 'QPd]+44u96jFWq', database: 'erpfixc1_root'}})
