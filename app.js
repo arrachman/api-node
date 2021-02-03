@@ -14,10 +14,6 @@ app.use(function(req, res, next) {
 });
 require('./api').app(app)
 
-require('reload')(app).then(function () {
   require('http').createServer(app).listen(process.env.PORT || 15001, function () {
     console.log('Web server listening on port ' + process.env.PORT || 15001)
   })
-}).catch(function (err) {
-  console.error('Reload could not start, could not start server/sample app', err)
-})
